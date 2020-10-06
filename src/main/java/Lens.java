@@ -3,15 +3,15 @@ public class Lens {
     private int minFocalLength;
     private int maxFocalLength;
     private String name;
-    private static int nrOfObjects = 0;
+    private static int NR_OF_OBJS = 0;
 
     // *** Constructor ***
     public Lens() {
-        ++nrOfObjects;
+        ++NR_OF_OBJS;
     }
 
     public Lens(int minFocalLength, int maxFocalLength, String name) {
-        ++nrOfObjects;
+        ++NR_OF_OBJS;
         if (minFocalLength < maxFocalLength) {
             this.minFocalLength = minFocalLength;
             this.maxFocalLength = maxFocalLength;
@@ -40,7 +40,7 @@ public class Lens {
     }
 
     public static int GetNrOfObjects() {
-        return nrOfObjects;
+        return NR_OF_OBJS;
     }
 
     // *** toString ***
